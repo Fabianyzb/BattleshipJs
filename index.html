@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Battleship Game</title>
+</head>
+
+<body>
+    <div id="game-container">
+        <h1 class="title">Battleship</h1>
+        <div id="coordinates">
+            <div class="col-coordinates">
+                <!-- Las letras de A a J en el lado izquierdo del tablero -->
+                <div>A</div>
+                <div>B</div>
+                <div>C</div>
+                <div>D</div>
+                <div>E</div>
+                <div>F</div>
+                <div>G</div>
+                <div>H</div>
+                <div>I</div>
+                <div>J</div>
+            </div>
+            <div class="row-coordinates">
+                <!-- Los números del 1 al 10 en la parte superior del tablero -->
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+                <div>7</div>
+                <div>8</div>
+                <div>9</div>
+                <div>10</div>
+            </div>
+        </div>
+        <div id="game-board" class="flex-container"></div>
+        <div id="footer">
+            <button id="toggle-ships-btn">Toggle Ships</button>
+            <button id="fire-button">Fire</button>
+            <div id="fire-input" style="display: none;">
+                <input type="text" id="coordinate-input" placeholder="Enter coordinates (e.g., A1)">
+                <button id="fire-submit-button">Submit</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

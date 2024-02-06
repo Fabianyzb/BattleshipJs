@@ -1,0 +1,51 @@
+.title {
+  text-align: center; /* Centrar el texto */
+  margin-top: 20px; /* Espacio en la parte superior */
+  font-size: 32px; /* Tamaño del texto */
+  color: #333; /* Color del texto */
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+#game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#game-board {
+  display: flex;
+  flex-wrap: wrap;
+  width: 400px; /* Ancho del tablero */
+}
+
+.cell {
+  width: 40px; /* Ancho de cada celda */
+  height: 40px; /* Altura de cada celda */
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.ship {
+  background-color: #3498db;
+}
+
+.hit {
+  background-color: #e74c3c;
+}
+
+.miss {
+  background-color: #95a5a6;
+}
+
+.col-coordinates,
+.row-coordinates {
+  display: none;
+}
